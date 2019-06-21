@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<Root>  
+  <Users>  
+    <User>  
+      <Name>Howard Snyder</Name>  
+      <Phone>(503) 555-7555</Phone>  
+      <Address>  
+        <Address>2732 Baker Blvd.</Address>  
+        <City>Eugene</City>  
+        <Region>OR</Region>  
+        <PostalCode>97403</PostalCode>  
+        <Country>USA</Country>  
+      </Address>
+    </User>
+    <User>  
+      <Name>Yoshi Latimer</Name>  
+      <Phone>(503) 555-6874</Phone>  
+      <Address>  
+        <Address>City Center Plaza 516 Main St.</Address>  
+        <City>Elgin</City>  
+        <Region>OR</Region>  
+        <PostalCode>97827</PostalCode>  
+        <Country>USA</Country>  
+      </Address>  
+    </User>  
+    <User>  
+      <Name>John Steel</Name>
+      <Phone>(509) 555-7969</Phone>
+      <Address>
+        <Address>12 Orchestra Terrace</Address>
+        <City>Walla Walla</City>
+        <Region>WA</Region>
+        <PostalCode>99362</PostalCode>
+        <Country>USA</Country>  
+      </Address>  
+    </User>  
+    <User>  
+      <Name>Jaime Yorres</Name>   
+      <Phone>(415) 555-5938</Phone>  
+      <Address>  
+        <Address>87 Polk St. Suite 5</Address>  
+        <City>San Francisco</City>  
+        <Region>CA</Region>  
+        <PostalCode>94117</PostalCode>  
+        <Country>USA</Country>  
+      </Address>  
+    </User>
+  </Users>
+</Root>
