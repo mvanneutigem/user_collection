@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+"""Run tests in src/tests"""
+# global imports
+import unittest
+
+# local imports
+from src.tests import test_parsing, generator_test
+
+unittest.main(test_parsing, verbosity=2)
+unittest.main(generator_test, verbosity=2)

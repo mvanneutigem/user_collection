@@ -1,37 +1,37 @@
 {
-	"Users": [
-		[
-			"Name": "Lars Hamon",
-			"Phone": "(02) 7432 7401",
-			"Address": {
-				"Address": "Ap #345-9065 Donec St.",
-				"City": "Huntsville",
-				"Region": "AL",
-				"PostalCode": "221017",
-				"Country": "Anguilla"
-			}
-		],
-		[
-			"Name": "Preston Bray",
-			"Phone": "(03) 2575 9008",
-			"Address": {
-				"Address": "P.O. Box 113, 4500 Justo Street",
-				"City": "Bridge of Allan",
-				"Region": "Stirlingshire",
-				"PostalCode": "21988",
-				"Country": "Tajikistan"
-			}
-		],
-		[
-			"Name": "Marvin Romero",
-			"Phone": "(05) 1557 2801",
-			"Address": {
-				"Address": "P.O. Box 441, 7141 Sodales Street",
-				"City": "Maringá",
-				"Region": "PR",
-				"PostalCode": "68938",
-				"Country": "Australia"
-			}
-		]
-	]
+  "Users": [
+    {
+      "Name": "Lars Hamon",
+      "Phone": "(02) 7432 7401",
+      "Address": {
+        "Address": "Ap #345-9065 Donec St.",
+        "City": "Huntsville",
+        "Region": "AL",
+        "PostalCode": "221017",
+        "Country": "Anguilla"
+      }
+    },
+    {
+      "Name": "Preston Bray",
+      "Phone": "(03) 2575 9008",
+      "Address": {
+        "Address": "P.O. Box 113, 4500 Justo Street",
+        "City": "Bridge of Allan",
+        "Region": "Stirlingshire",
+        "PostalCode": "21988",
+        "Country": "Tajikistan"
+      }
+    },
+    {
+      "Name": "Marvin Romero",
+      "Phone": "(05) 1557 2801",
+      "Address": {
+        "Address": "P.O. Box 441, 7141 Sodales Street",
+        "City": "Maringa",
+        "Region": "PR",
+        "PostalCode": "68938",
+        "Country": "Australia"
+      }
+    }
+  ]
 }
