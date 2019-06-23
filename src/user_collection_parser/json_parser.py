@@ -5,12 +5,13 @@ import json
 # local imports
 import base
 
-def _byteify(data, ignore_dicts = False):
+
+def _byteify(data, ignore_dicts=False):
     """Convert data into byteified value/string representation."""
     if isinstance(data, unicode):
         return data.encode('utf-8')
     if isinstance(data, list):
-        return [ _byteify(item, ignore_dicts=True) for item in data ]
+        return [_byteify(item, ignore_dicts=True) for item in data]
     if isinstance(data, dict) and not ignore_dicts:
         return {
             _byteify(key, ignore_dicts=True): _byteify(value, ignore_dicts=True)
@@ -18,9 +19,10 @@ def _byteify(data, ignore_dicts = False):
         }
     return data
 
+
 class jsonParser(base.Parser):
     """Class for parsing jsonfiles.
-    
+
     Args:
         filepath (str): path of file to parse.
     """
@@ -31,4 +33,3 @@ class jsonParser(base.Parser):
                 json.load(json_file, object_hook=_byteify),
                 ignore_dicts=True
             )
-            

@@ -5,9 +5,10 @@ from xml.etree import ElementTree
 # local imports
 import base
 
+
 class xmlList(list):
     """Utility class to convert xml to python list.
-    
+
     Args:
         root (element): parent element to iterate over.
     """
@@ -22,10 +23,11 @@ class xmlList(list):
                 text = element.text.strip()
                 if text:
                     self.append(text)
-                    
+
+
 class xmlDict(dict):
     """Utility class to convert xml to python dict.
-    
+
     Args:
         root (element): parent element to iterate over.
     """
@@ -40,21 +42,21 @@ class xmlDict(dict):
                 # treat as list
                 else:
                     update_dict = xmlList(element)
-                
+
                 if element.items():
                     update_dict.update(dict(element.items()))
                 self.update({element.tag: update_dict})
-            
+
             elif element.items():
                 self.update({element.tag: dict(element.items())})
-            
+
             else:
                 self.update({element.tag: element.text})
-                
+
 
 class xmlParser(base.Parser):
     """Class for parsing xmlfiles.
-    
+
     Args:
         filepath (str): path of file to parse.
     """

@@ -6,6 +6,7 @@ import os
 # local imports
 from ..user_collection import UserCollection
 
+
 class TestParsing(unittest.TestCase):
     """Unittest class for testing parsing."""
     def test_parse_xml(self):
@@ -14,7 +15,7 @@ class TestParsing(unittest.TestCase):
         directory = os.path.dirname(os.path.realpath(__file__))
         os.path.join(directory, filepath)
         user_object = UserCollection(filepath)
-        
+
         # expected data
         user_zero = {
             "Name": "Howard Snyder",
@@ -27,7 +28,7 @@ class TestParsing(unittest.TestCase):
                     "Country": "USA"
                 }
         }
-        
+
         user_three = {
             "Name": "Jaime Yorres",
             "Phone": "(415) 555-5938",
@@ -39,7 +40,7 @@ class TestParsing(unittest.TestCase):
                     "Country": "USA"
                 }
         }
-        
+
         self.assertDictEqual(user_object[0], user_zero)
         self.assertDictEqual(user_object.users[3], user_three)
 
@@ -49,7 +50,7 @@ class TestParsing(unittest.TestCase):
         directory = os.path.dirname(os.path.realpath(__file__))
         os.path.join(directory, filepath)
         user_object = UserCollection(filepath)
-        
+
         # expected data
         user_zero = {
             "Name": "Lars Hamon",
@@ -62,7 +63,7 @@ class TestParsing(unittest.TestCase):
                     "Country": "Anguilla"
                 }
         }
-        
+
         user_two = {
             "Name": "Marvin Romero",
             "Phone": "(05) 1557 2801",
@@ -74,7 +75,6 @@ class TestParsing(unittest.TestCase):
                     "Country": "Australia"
                 }
         }
-        
+
         self.assertDictEqual(user_object[0], user_zero)
         self.assertDictEqual(user_object.users[2], user_two)
-        
