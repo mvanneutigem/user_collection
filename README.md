@@ -2,6 +2,7 @@
 sample python code for interacting with data stored in different file types.
 
 run application:
+
 	user_collection:
 		Display or convert User collection data.
 		    display          Command to display file contents.
@@ -18,10 +19,12 @@ run application:
 			
 
 Example commands:
+
 	user_collection display resources/xml_data.xml
 	user_collection display resources/json_data.json --format html
 	user_collection convert resources/json_data.json output/json_output_data.xml 
 	user_collection convert resources/xml_data.xml output/xml_output_data.json 
 	
 Run unittests:
+
 	./test
